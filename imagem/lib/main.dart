@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Future<List> getImages() async {
 
     // Resposta da requisição ao servidor, (trocar a url caso o ip da minha net mude)
-    http.Response result = await http.get('http://179.125.89.8:3000/img');
+    http.Response result = await http.get('http://lucassrv.ddns.net/img');
 
     //Decodificando a resposta JSON em uma List
     return json.decode(result.body);
